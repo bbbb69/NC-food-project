@@ -51,7 +51,19 @@ h2 {
 }
 
 .ingredients-details > h2 {
-    margin-left: 15px;
+    margin-left: -10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .ingredients-details > h2 {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ingredients-details > h2 {
+        margin-left: 10px;
+    }
 }
 .row {
     display: flex;
@@ -92,7 +104,7 @@ h2 {
 @media only screen and (min-width: 768px) {
     .ingredients-wrap {
         background-color: #f8f9fa;
-        height: 635px;
+        height: 700px;
         width: 690px;
     }
 }
@@ -211,4 +223,8 @@ ul.recipe-text > li {
     display: flex;
     flex-flow: row;
     margin: 20px auto;
+}
+
+ul.recipe-text > li > p {
+    padding: 13px 0px 0px 50px;
 }
