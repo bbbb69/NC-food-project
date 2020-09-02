@@ -38,6 +38,10 @@ h1 {
 }
 
 /* section-content */
+
+h2 {
+    font-size: 24px;
+}
 .contact-page__content {
     margin: 70px auto;
 }
@@ -68,21 +72,25 @@ h1 {
 input,
 textarea {
     background-color: #eff3f7;
+    border: none;
 }
 @media only screen and (min-width: 768px) {
     .form {
-        width: 690px;
+        width: 640px;
     }
 }
 @media only screen and (min-width: 992px) {
     .form {
-        width: 784px;
+        width: 66%;
+        padding: 0 15px;
     }
 }
 
 .form-top {
     display: flex;
     flex-flow: column nowrap;
+    margin-left: -15px;
+    margin-top: 75px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -90,6 +98,165 @@ textarea {
         display: flex;
         flex-flow: row nowrap;
     }
+}
+
+.form-top__col > input {
+    width: 290px;
+    height: 53px;
+    padding: 0 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .form-top__col > input {
+        width: 330px;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .form-top__col > input {
+        width: 290px;
+        padding: 0 30px;
+    }
+}
+.form-top__col {
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+/* subject */
+.subject > input {
+    height: 53px;
+    width: 290px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .subject > input {
+        height: 53px;
+        width: 690px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .subject > input {
+        height: 53px;
+        width: 610px;
+    }
+}
+/* text area */
+.message > textarea {
+    height: 232px;
+    width: 290px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .message > textarea {
+        height: 232px;
+        width: 690px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .message > textarea {
+        width: 610px;
+        height: 232px;
+    }
+}
+
+.button > button {
+    height: 56px;
+    width: 149px;
+    background-color: #ff2a6b;
+    border: none;
+    color: white;
+}
+
+/* Info */
+
+.info {
+    width: 320px;
+    padding: 20px 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .info {
+        padding: 20px 15px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .info {
+        padding: 0px 15px;
+        width: 40%;
+    }
+}
+
+.login {
+    margin-bottom: 40px;
+}
+
+.contact__info {
+    padding-left: 0px;
+    margin-bottom: 55px;
+}
+
+@media only screen and (min-width: 992px) {
+    .contact__info {
+        padding-left: 95px;
+    }
+}
+
+h6 {
+    font-size: 16px;
+    color: #ff2a6b;
+    font-style: underline;
+}
+
+.contact__info-list {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact__info-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contact__info-list {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+.contact__info-list > li {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact__info-list > li {
+        margin-bottom: 25px;
+        width: 33%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contact__info-list > li {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+}
+
+.contact__info-list > li > p {
+    margin: 10px auto;
 }
 
 /* Media Icon */
