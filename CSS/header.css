@@ -139,6 +139,10 @@
     font-size: 15px;
 }
 
+.Lowerbar a:hover {
+    color: #ff2a6b;
+}
+
 .Lowerbar__logo > img {
     width: 72px;
     height: 36px;
