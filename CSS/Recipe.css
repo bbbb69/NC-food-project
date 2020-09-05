@@ -167,3 +167,27 @@ ul.recipes__stars > li:nth-child(5) {
 .page-number__list:nth-child(1) {
     background-color: #ff2a6b;
 }
+
+/* scroll to top */
+
+html {
+    scroll-behavior: smooth;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 35px;
+    transition: all 0.35s ease 0s;
+
+    border: 1px solid #ff2a6b;
+    padding: 15px;
+    background-color: #ff2a6b;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 3px 4px 15px 1px lightgray;
+}
+
+.scroll-to-top > a {
+    color: white;
+}
