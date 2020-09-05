@@ -135,12 +135,13 @@
 
 .Lowerbar__List a {
     color: #474747;
-    font-weight: bold;
+    font-weight: medium;
     font-size: 15px;
 }
 
 .Lowerbar a:hover {
     color: #ff2a6b;
+    font-weight: bold;
 }
 
 .Lowerbar__logo > img {

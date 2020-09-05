@@ -9,17 +9,36 @@
 .hero > .container {
     text-align: center;
 }
+
+@keyframes recipes-animation {
+    from {
+        transform: scale(0, 0);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
 h1 {
     display: inline-block;
     background-color: #ff2a6b;
     font-size: 60px;
     border: 1px solid #ff2a6b;
-    border-radius: 10%;
+    border-radius: 5%;
 
     font-weight: bold;
     color: white;
     padding: 5px 20px;
     margin: 40px auto;
+
+    animation-name: recipes-animation;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
 }
 
 /* recipes */
@@ -51,12 +70,46 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin: 25px -15px;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
 }
+
 .recipes {
     width: 33, 333333%;
     position: relative;
     padding-left: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .page {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px -15px;
+        flex-flow: row wrap;
+    }
+
+    .recipes {
+        width: 50%;
+        position: relative;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .page {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px -15px;
+        flex-flow: row wrap;
+    }
+
+    .recipes {
+        width: 33%;
+        position: relative;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
 }
 
 .recipes > img {
@@ -72,6 +125,7 @@ h2 {
     border: 1px solid #ff2a6b;
     background-color: #ff2a6b;
     padding: 10px 100px 15px 20px;
+    clip-path: polygon(0 0, 91% 0, 76% 100%, 0% 100%);
 
     color: white;
     font-size: 18px;
@@ -85,6 +139,10 @@ ul.recipes__stars {
 ul.recipes__stars > li {
     color: yellow;
     padding-top: 3px;
+}
+
+ul.recipes__stars > li:nth-child(5) {
+    color: lightgray;
 }
 
 /* Page number */
@@ -104,4 +162,8 @@ ul.recipes__stars > li {
     font-weight: bold;
     padding: 7px 15px 5px 15px;
     margin-left: 10px;
+}
+
+.page-number__list:nth-child(1) {
+    background-color: #ff2a6b;
 }

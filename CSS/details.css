@@ -29,7 +29,8 @@ h1 {
 
 .pink-bar > span {
     background-color: #ff2a6b;
-    padding: 14px 20px 12px 30px;
+    padding: 14px 50px 12px 30px;
+    clip-path: polygon(0 0, 91% 0, 76% 100%, 0% 100%);
 }
 
 .recipe-detail-section ul {
@@ -118,14 +119,29 @@ h2 {
 }
 .ingredients-top {
     height: 137px;
-    width: 260px;
+    width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+    .ingredients-top {
+        height: 137px;
+        width: 460px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ingredients-top {
+        height: 137px;
+        width: 460px;
+    }
 }
 
 .ingredients-top__text {
     color: #ffffff;
     font-size: 16px;
     background-color: #ff2a6b;
-    padding: 22px 50px;
+    padding: 22px 90px 10px 60px;
+    clip-path: polygon(0 0, 91% 0, 76% 100%, 0% 100%);
 }
 
 .ingredients-top__text > p {

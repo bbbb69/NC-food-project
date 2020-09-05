@@ -6,29 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Primary Meta Tags -->
     <title>The best food blog ever!</title>
-    <meta name="title" content="The best food blog ever!">
-    <meta name="description" content="check this out!">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nc-food-project-153gy2677.vercel.app/">
-    <meta property="og:title" content="The best food blog ever!">
-    <meta property="og:description" content="check this out!">
-    <meta property="og:image" content="https://nc-food-project-153gy2677.vercel.app/">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nc-food-project-153gy2677.vercel.app/">
-    <meta property="twitter:title" content="The best food blog ever!">
-    <meta property="twitter:description" content="check this out!">
-    <meta property="twitter:image" content="">
     <script src="https://kit.fontawesome.com/1c94c3d2d4.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/Footer.css">
-
+    <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/grid/row.css">
+    <link rel="stylesheet" href="CSS/grid/col.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -84,8 +72,19 @@
                     <div class="Lowerbar__logo">
                         <img src="images/logo.svg" alt="nordic coder logo">
                     </div>
-                    <div class="Lowerbar__links">
-                        <ul class="Lowerbar__List">
+
+                    <div class="menu">
+                        <div class="menu-drop">
+                            <i class="dropdown-bar">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </i>
+                        </div>
+
+                        <ul class="Lowerbar__List ">
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
@@ -110,6 +109,7 @@
 
                         </ul>
                     </div>
+
                     <div class="Lowerbar__search">
 
                         <i class="fas fa-search"></i>
@@ -127,9 +127,7 @@
         <nav></nav>
 
 
-
     </header>
-
     <main>
 
         <Section class="Hero__healthyrecipes">
@@ -153,56 +151,9 @@
                     </div>
 
                     <div class=" recipes_page">
-                        <div class="page">
-                            <div class="recipes col">
-                                <img src="images/recipes/1.jpg" alt="">
-                                <div class="recipes__content">
-                                    <p>Traditional pizza</p>
-                                    <ul class="recipes__stars">
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <div class="recipes col">
-                                <img src="images/recipes/2.jpg" alt="">
-                                <div class="recipes__content">
-                                    <p>Italian Pasta</p>
-                                    <ul class="recipes__stars">
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="recipes col">
-                                <img src="images/recipes/3.jpg" alt="">
-                                <div class="recipes__content">
-                                    <p>Cheese cake</p>
-                                    <ul class="recipes__stars">
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                        <li><i class="fas fa-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                    <div class="page">
-                        <div class="recipes col">
-                            <img src="images/recipes/4.jpg" alt="">
+                        <div class="recipes ">
+                            <img src="images/recipes/1.jpg" alt="">
                             <div class="recipes__content">
                                 <p>Traditional pizza</p>
                                 <ul class="recipes__stars">
@@ -215,7 +166,50 @@
                             </div>
                         </div>
 
-                        <div class="recipes col">
+                        <div class="recipes ">
+                            <img src="images/recipes/2.jpg" alt="">
+                            <div class="recipes__content">
+                                <p>Italian Pasta</p>
+                                <ul class="recipes__stars">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="recipes ">
+                            <img src="images/recipes/3.jpg" alt="">
+                            <div class="recipes__content">
+                                <p>Cheese cake</p>
+                                <ul class="recipes__stars">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="recipes ">
+                            <img src="images/recipes/4.jpg" alt="">
+                            <div class="recipes__content">
+                                <p>Cheese pizza</p>
+                                <ul class="recipes__stars">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="recipes ">
                             <img src="images/recipes/5.jpg" alt="">
                             <div class="recipes__content">
                                 <p>Traditional pizza</p>
@@ -229,7 +223,7 @@
                             </div>
                         </div>
 
-                        <div class="recipes col">
+                        <div class="recipes ">
                             <img src="images/recipes/6.jpg" alt="">
                             <div class="recipes__content">
                                 <p>Traditional pizza</p>
@@ -443,7 +437,7 @@
 
 
 
-                    <div class="col italian-review">
+                    <div class="italian-review">
                         <div class="image">
                             <img src="images/blog/1.jpg" alt="">
                             <p>May o4 2018</p>
@@ -469,7 +463,7 @@
 
         <section class="review-bar">
             <div class="container">
-                <div class="row">
+                <div class="Review_row">
                     <div class="col review">
                         <div class="image">
 
@@ -583,6 +577,7 @@
                 </Div>
             </div>
         </div>
+    </footer>
 </body>
 
 </html>

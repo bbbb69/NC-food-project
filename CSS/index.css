@@ -1,4 +1,35 @@
+/* animation */
+
+@keyframes h1-animation {
+    from {
+        transform: scale(0, 0) rotate(4deg);
+    }
+
+    50% {
+        transform: scale(1, 1) rotate(4deg);
+    }
+
+    to {
+        transform: scale(1, 1) rotate(4deg);
+    }
+}
+
+@keyframes h2-animation {
+    from {
+        transform: scale(0, 0);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
 /* HERO SECTION */
+
 .Hero__healthyrecipes {
     background-image: url(../images/slider-bg-2.jpg);
     text-align: center;
@@ -13,26 +44,31 @@
 }
 
 .hero__title-1 span {
-    font-size: 72px;
+    font-size: 38px;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     transform: rotate(4deg);
 
     border: 1px solid #ff2a6b;
     background-color: #ff2a6b;
-    padding: 5px 28px;
+    padding: 1px 28px;
     border-radius: 5px;
     text-align: center;
 
     box-shadow: 1px -5px 35px 5px darkgray;
 
     position: absolute;
-    top: 100px;
-    left: 250px;
+    top: 125px;
+    left: 10px;
+
+    animation-name: h1-animation;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .hero__title-2 span {
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 600;
     color: white;
 
@@ -41,12 +77,17 @@
     padding: 5px 28px;
 
     position: absolute;
-    top: 220px;
-    left: 280px;
+    top: 240px;
+    left: 10px;
+
+    animation-name: h2-animation;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .hero__title-3 span {
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 600;
     color: white;
 
@@ -56,9 +97,115 @@
     border-radius: 3px;
 
     position: absolute;
-    top: 310px;
-    left: 360px;
+    top: 330px;
+    left: 60px;
+
+    animation-name: h2-animation;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
+
+@media only screen and (min-width: 768px) {
+    .hero__title-1 span {
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        transform: rotate(4deg);
+
+        border: 1px solid #ff2a6b;
+        background-color: #ff2a6b;
+        padding: 5px 28px;
+        border-radius: 5px;
+        text-align: center;
+
+        box-shadow: 1px -5px 35px 5px darkgray;
+
+        position: absolute;
+        top: 130px;
+        left: 190px;
+    }
+
+    .hero__title-2 span {
+        font-size: 38px;
+        font-weight: 600;
+        color: white;
+
+        border: 1px solid #fdc856;
+        background-color: #fdc856;
+        padding: 5px 28px;
+
+        position: absolute;
+        top: 220px;
+        left: 200px;
+    }
+
+    .hero__title-3 span {
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+
+        border: 1px solid #bdde64;
+        background-color: #bdde64;
+        padding: 10px 28px;
+        border-radius: 3px;
+
+        position: absolute;
+        top: 280px;
+        left: 280px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero__title-1 span {
+        font-size: 72px;
+        color: white;
+        font-weight: 700;
+        transform: rotate(4deg);
+
+        border: 1px solid #ff2a6b;
+        background-color: #ff2a6b;
+        padding: 5px 28px;
+        border-radius: 5px;
+        text-align: center;
+
+        box-shadow: 1px -5px 35px 5px darkgray;
+
+        position: absolute;
+        top: 150px;
+        left: 250px;
+    }
+
+    .hero__title-2 span {
+        font-size: 48px;
+        font-weight: 600;
+        color: white;
+
+        border: 1px solid #fdc856;
+        background-color: #fdc856;
+        padding: 5px 28px;
+
+        position: absolute;
+        top: 270px;
+        left: 320px;
+    }
+
+    .hero__title-3 span {
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+
+        border: 1px solid #bdde64;
+        background-color: #bdde64;
+        padding: 10px 28px;
+        border-radius: 3px;
+
+        position: absolute;
+        top: 360px;
+        left: 420px;
+    }
+}
+
 /* recipes */
 
 .Latest__recipes {
@@ -84,16 +231,44 @@ h2 {
 .recipes_page {
     margin-bottom: 96px;
 }
-.page {
+.recipes_page {
     display: flex;
     justify-content: space-between;
-    margin: 25px -15px;
-    flex-flow: row nowrap;
+    margin: 0px -15px;
+    flex-flow: column nowrap;
 }
+
 .recipes {
-    width: 33, 333333%;
+    height: 100%;
     position: relative;
     padding-left: 15px;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .recipes_page {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px -15px;
+        flex-flow: row wrap;
+    }
+    .recipes {
+        width: 48%;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .recipes_page {
+        display: flex;
+        justify-content: center;
+        margin: 25px -15px;
+        flex-flow: row wrap;
+    }
+    .recipes {
+        width: 32%;
+        padding-left: 15px;
+    }
 }
 
 .recipes > img {
@@ -109,6 +284,7 @@ h2 {
     border: 1px solid #ff2a6b;
     background-color: #ff2a6b;
     padding: 10px 100px 15px 20px;
+    clip-path: polygon(0 0, 91% 0, 76% 100%, 0% 100%);
 
     color: white;
     font-size: 18px;
@@ -216,10 +392,39 @@ ul.recipes__stars li:nth-child(5) {
     max-width: 290px;
     position: relative;
 }
+
+@media only screen and (min-width: 768px) {
+    .italian-review {
+        max-width: 690px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .italian-review {
+        width: 290px;
+    }
+}
 .image > img {
     height: 200px;
     width: 290px;
     position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .image > img {
+        height: 478px;
+        width: 690px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .image > img {
+        height: 200px;
+        width: 290px;
+        position: relative;
+    }
 }
 .image {
     position: relative;
@@ -239,6 +444,7 @@ ul.recipes__stars li:nth-child(5) {
     padding: 48px 40px 45px;
     position: relative;
 }
+
 .review-text p:nth-child(1) {
     font-size: 18px;
     color: #474747;
@@ -268,38 +474,52 @@ ul.recipes__stars li:nth-child(5) {
     margin-top: 96px;
 }
 
-.row {
+.Review_row {
     display: flex;
     flex-flow: column nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+    .Review_row {
+        padding-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Review_row {
+        padding-left: 0;
+    }
 }
 
 .review-bar .col {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
+    margin-left: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-    .row {
+    .Review_row {
         display: flex;
         flex-flow: column nowrap;
     }
     .review-bar .col {
         display: flex;
         flex-flow: row nowrap;
-        width: 100%;
+        width: 449px;
+        height: 145px;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .row {
+    .Review_row {
         display: flex;
         flex-flow: row nowrap;
     }
     .review-bar .col {
         display: flex;
         flex-flow: row nowrap;
-        width: 50%;
+        width: 48%;
     }
 }
 
@@ -309,12 +529,31 @@ ul.recipes__stars li:nth-child(5) {
     padding-right: 10px;
     position: relative;
 }
+
+@media only screen and (min-width: 768px) {
+    .col > .image > img {
+        height: 145px;
+        width: 170px;
+        padding-right: 10px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .col > .image > img {
+        height: 145px;
+        width: 170px;
+        padding-right: 10px;
+        position: relative;
+    }
+}
 .image > p {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 9px 2px 8px 13px;
+
     font-size: 12px;
+    clip-path: polygon(0 0, 91% 0, 76% 100%, 0% 100%);
 }
 
 .review__content {
