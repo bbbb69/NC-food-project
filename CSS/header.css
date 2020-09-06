@@ -216,7 +216,7 @@ nav ul li a {
 @media only screen and (min-width: 768px) {
     .Lowerbar__List {
         display: flex;
-        flex-flow: row;
+        flex-flow: row nowrap;
     }
 }
 
@@ -227,7 +227,7 @@ nav ul li a {
 .Lowerbar__List a {
     color: #474747;
     font-weight: medium;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .Lowerbar a:hover {
@@ -239,6 +239,14 @@ nav ul li a {
     width: 72px;
     height: 36px;
     padding-left: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .Lowerbar__List a {
+        color: #474747;
+        font-weight: medium;
+        font-size: 15px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .Lowerbar__logo > img {
