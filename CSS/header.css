@@ -148,7 +148,7 @@ nav ul li a {
     color: black;
 }
 
-label #sign-one,
+#sign-one,
 #sign-two {
     font-size: 30px;
     color: black;
@@ -167,7 +167,7 @@ label #sign-one,
 }
 
 @media only screen and (max-width: 320px) {
-    label #sign-one {
+    #sign-one {
         display: block;
     }
 
@@ -202,11 +202,11 @@ label #sign-one,
         border-bottom: 1px solid black;
     }
 
-    #res-menu:checked ~ label #sign-one {
+    #res-menu:checked ~ #sign-one {
         display: none;
     }
 
-    #res-menu:checked ~ label #sign-two {
+    #res-menu:checked ~ #sign-two {
         display: block;
     }
 }
